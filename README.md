@@ -1,4 +1,3 @@
-# Candidate Number: 45013
 # Efficient Data Representation by Selecting Prototypes with Importance Weights: An Implementation in PySpark
 
 ## Summary:
