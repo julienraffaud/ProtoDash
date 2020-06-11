@@ -2,7 +2,7 @@
 
 ## Summary:
 
-In this notebook I present a prototype selection algorithm proposed by Gurumoorthy, K. S. et al. ([1]) called ProtoDash, that is capable not only of selecting prototypes from a source dataset that are representative of a given target dataset, but can also assign non-negative weights to each one, thereby giving a sense of their relative importance in representing this target dataset. 
+In this notebook I present a prototype selection algorithm proposed by Gurumoorthy, K. S. et al. [1] called ProtoDash, that is capable not only of selecting prototypes from a source dataset that are representative of a given target dataset, but can also assign non-negative weights to each one, thereby giving a sense of their relative importance in representing this target dataset. 
 
 I implement the ProtoDash algorithm using PySpark, the Python API supporting Apache Spark, and in two experiments demonstrate its performance in application to a well-known large dataset: the MNIST Dataset of Handwritten Digits. In these experiments I show that the ProtoDash algorithm is capable of effectively representing an increasingly skewed target dataset based on a completely distinct and randomly sampled source dataset. Furthermore, I show that the algorithm's runtime in practice is largely driven by the computation of the mean inner product between the observations in the target and source datasets, with the actual selection of prototypes taking an increasingly small fraction of time as the dataset sizes increase by orders of magnitude.
 
